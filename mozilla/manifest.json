@@ -1,0 +1,20 @@
+{
+  "name": "Boticario change header-menu color",
+  "description": "Extension to change Bóticar site header-menu color",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "browser_action":{
+    "default_popup": "./static/template/index.html",
+    "default_title": "Change Header Color"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [ "static/js/boticario.js" ]
+    }
+  ]
+}
