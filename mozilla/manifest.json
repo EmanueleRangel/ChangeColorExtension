@@ -1,6 +1,6 @@
 {
   "name": "Boticario change header-menu color",
-  "description": "Extension to change Bóticar site header-menu color",
+  "description": "Extension to change Boticario site header-menu color",
   "version": "1.0",
   "manifest_version": 2,
   "permissions": [

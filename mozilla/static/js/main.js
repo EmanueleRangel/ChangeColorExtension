@@ -1,5 +1,5 @@
 window.addEventListener(`load`, async () => {
-    const  [tab] = await browser.tabs.query({active: true, currentWindow: true});
+    const  [tab] = await chrome.tabs.query({active: true, currentWindow: true});
     browser.tabs.sendMessage(tab.id, {event: "get-header"}, (response) => {
         if (!response || !response.header) {
             const container = document.getElementById('container');
